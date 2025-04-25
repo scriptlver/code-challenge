@@ -1,0 +1,9 @@
+n = int(input())
+diferentes = set()
+for _ in range(n):
+    s = input().strip()         
+    s_invertida = s[::-1]       
+    representacao = min(s, s_invertida)  
+    diferentes.add(representacao)      
+
+print(len(diferentes))

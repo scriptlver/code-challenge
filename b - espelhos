@@ -1,0 +1,6 @@
+quant = int(input())
+reflexo = {'p': 'q', 'q': 'p', 'w': 'w'}
+for _ in range(quant):
+    a = input()
+    b = ''.join(reflexo[char] for char in reversed(a))
+    print(b)
